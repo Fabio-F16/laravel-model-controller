@@ -1,4 +1,12 @@
-.card {
+.ff-card {
+  min-height: 250px;
+  padding: 10px;
+  background-color: rgba(0, 5, 193, 0.2);
   border: 1px solid black;
+  border-radius: 20px;
+}
+
+.ff-card h3 {
+  color: blue;
 }
 

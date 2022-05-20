@@ -1,12 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
-    @foreach ($movie as $item)
-        <div class="card">
-            <h3>Titolo: {{ $item['title'] }}</h3>
-            <h6>Titolo originale: {{ $item['original_title'] }}</h6>
-            <p>Voto: {{ $item['vote'] }}</p>
-            <p>Nazionalità: {{ $item['nationality'] }}</p>
+    <div class="container">
+        <h1 class="text-center">Film</h1>
+        <div class="row justify-content-center">
+            @foreach ($movie as $item)
+                <div class="ff-card col-5 m-2">
+                    <h3>Titolo: {{ $item['title'] }}</h3>
+                    <h6>Titolo originale: {{ $item['original_title'] }}</h6>
+                    <p>Voto: {{ $item['vote'] }}</p>
+                    <p>Nazionalità: {{ $item['nationality'] }}</p>
+                </div>
+            @endforeach
         </div>
-    @endforeach
+    </div>
 @endsection
